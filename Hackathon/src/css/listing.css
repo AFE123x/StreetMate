@@ -6,7 +6,6 @@
 .listingContainer{
     display: flex; 
     justify-content: center;
-    background-color: #ecf0f1; 
 }
 
 /* Filter Buttons */
@@ -31,14 +30,15 @@
     cursor: pointer;
 }
 
-.button:not(.button--selected):hover {
+.button:hover {
     background-color: #cccccc;
 
 }
 
-.button--selected {
-    background-color: #009578; 
-    text-decoration-color: white;
+.active, .button:hover {
+    background-color: green;
+    color: white;
+    border: 1px solid green; 
 }
 
 
