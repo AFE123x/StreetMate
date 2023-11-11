@@ -3,7 +3,6 @@
 
 /* Reset and Global Styles */
 * {
-    box-sizing: border-box;
     margin: 0;
     padding: 0;
     
@@ -16,10 +15,8 @@
     justify-content: space-between;
     align-items: center;
     padding: 10px;
-    margin-bottom: 10px;
     background-color: #2f2f2f;
 }
-
 
 .logo img {
     width: 100px;
@@ -50,8 +47,8 @@
 
 .nav__links li {
     display: inline-block;
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-left: 25px;
+    margin-right: 25px;
 }
 
 li, a {
@@ -67,7 +64,7 @@ li, a {
 }
 
 .nav__links li a:hover {
-    background-color: #0088a9;
+    background-color: #b0b0b0;
 }
 
 /* Title Styles */

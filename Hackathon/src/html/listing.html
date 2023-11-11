@@ -29,13 +29,14 @@
         </div>
 
         <!-- Container for Filter and Listing -->
+    <div class="backdrop">
         <div class="listingContainer">
             <!-- Filter Flexbox -->
-            <div class="filterArea">
-                <h3>Filter</h3>
+            <div class="filterArea" style="width: 100%;">
                 <div id="filters">
+                    <h3 id="filter-label">Filter</h3>
                     <div id="Publicprivateoption">
-                        <h1>aoeu</h1>
+                        <h1>Type</h1>
                         <label>
                             <input type="checkbox" name="option1" id="PublicParking"> Public
                         </label>
@@ -45,20 +46,36 @@
                         </label>
                     </div>
                     <div id="price">
-                        <h1>aoeu</h1>
+                        <h1>Budget</h1>
+                        <input type="text" name="Mininimum" placeholder="Min"><br>
+                        <input type="text" name="Maximum" placeholder="Max">
+
                     </div>
                     <div id="location">
-                        <h1>aoeu</h1>
+                        <h1>Location</h1>
+                        <h4>within</h4>
+                        <input type="text" name="Radius" placeholder="distance" >
+                        <h4>of</h4>
+                        <input type="text" name="ZIP" placeholder="Zip Code" >
                     </div>
                 </div>
                 
-            </div>
-            
-            <!-- Listing Flexbox -->
-            <div class="listingBox">
-
-            </div> 
+            </div>  
         </div>
+        
+
+        
+        <!-- Listing Flexbox -->
+        <br><br><br><br>
+        <div class="container">
+        <div class="listingBox">
+            <div class="list">
+               <ul id="myarray"></ul> 
+            </div> 
+        </div> 
+    </div>
+    </div>
         <script src="../js/scripts.js"></script>
+        <script src="../js/listing.js"></script>
     </body>
 </html>

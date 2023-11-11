@@ -18,6 +18,9 @@ function addFilter () {
 }; 
 
 
+
+
+
 // function updateListing(filter) {
 //   var listings = document.querySelectorAll('.listing');
 

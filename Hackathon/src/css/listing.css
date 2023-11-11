@@ -1,24 +1,105 @@
 /* Font */
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@100&family=Montserrat:ital,wght@0,300;1,500&display=swap');
 
-/* Listing Containers  */
+/* Backdrop is just blank backgroung color */
+.backdrop {
+  background-color: #212121;
+  padding-bottom: 100%;
+  padding-top: 10px;
+}
+
+
+/* Listing Containers -> rectangle box  */
 .listingContainer{
-    display: flex; 
-    justify-content: center;
-    
+  display:flex;
+
+
 }
 
 .filterArea {
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  background-color: #212121;
-  padding: 100%;
+  flex-direction: row;
+  /* justify-content: center; */
+  align-items: center;
+  padding-right: none;
+
+  
+}
+
+#filter-label {
+  color: #919191;
+  margin: 5px;
+  font-size: 45px;
+  margin-right: 30px;
 }
 
 #filters {
   display: flex;
   flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #2f2f2f;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+  margin: 15px; 
+  padding: 15px;
+  width: 100%;
+}
+
+#Publicprivateoption {
+  background-color: #999999;
+  padding: 20px; 
+  border-radius: 2em;
+  display: flex;
+}
+
+#Publicprivateoption h1{
+  margin-right: 20px; 
+}
+
+#Publicprivateoption label {
+  display: flex; 
+  flex-direction: row;
+  align-items: center;
+  font-size: 18px;
+  padding: 5px;  
+  justify-content: space-between;
+}
+
+#price {
+  background-color: #999999;
+  padding: 20px; 
+  border-radius: 2em;
+  display: flex; 
+}
+
+#price h1{
+  margin-right: 20px; 
+}
+
+#price input{
+  margin-right: 10px; 
+}
+
+#location {
+  background-color: #999999;
+  padding: 20px; 
+  border-radius: 2em;
+  display: flex;
+  flex-direction: ro;
+}
+
+#location h1 h4 {
+  margin-right: 10px;
+}
+
+.container {
+  margin-left: 100px;
+}
+
+.listingBox {
+  background-color: green;
+  padding-left: 60px
+  margin-left 10px;
 }
 
 /* Optional: Add styling for individual filter divs */
@@ -26,58 +107,23 @@
   margin-right: 10px; /* Adjust the margin as needed */
 }
 
+/* Style for the table and cells */
+.parking-table {
+  width: 100%;
+  /* border: 1px solid #7e6969; Add border to the table */
+  margin-left: 15px;
+  
+}
 
+.parking-table th, .parking-table td {
+  padding: 8px;
+  text-align: left;
+  border-top: 1px solid #7e6969;
+  
+}
 
-/* //flex boxes */
-
-
-
-
-
-/* <!DOCTYPE html>
-
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Street Mate Project</title>
-  <link rel="stylesheet" href="../css/listing.css">
-</head>
-<body>
-
-<!-- Top Container + Nav Bar -->
-<div class="topContainer">
-  <div class="logo" id="logo">
-    < img src="../resources/20210908_162908.jpg" alt="StreetMate Logo">
-    <h1>StreetMate</h1>
-  </div>
-  <nav>
-    <ul class="nav__links">
-      <li><a href=" ">Home</a ></li>
-      <li><a href="../html/listing.html">Listings</a ></li>
-      <li><a href="contact">Contact</a ></li>
-    </ul>
-  </nav>
-</div>
-
-<!-- Container for Filter and Listing -->
-<main class="listingContainer">
-  <!-- Filter Flexbox -->
-  <div class="filterBox">
-    <h1>Filter</h1>
-    <button class="button button--selected" type="button">All</button>
-    <button class="button" type="button">Option1</button>
-    <button class="button" type="button">Option2</button>
-    <button class="button" type="button">Option3</button>
-  </div>
-
-  <!-- Listing Flexbox -->
-  <div class="listingBox" id="listingContainer">
-
-  </div>
-</main>
-
-<script src="../js/script.js"></script>
-
-</body>
-</html> */
+/* Style for the images */
+.parking-table img {
+  display: block;
+  margin: 0 auto; /* Center the image in its cell */
+}
