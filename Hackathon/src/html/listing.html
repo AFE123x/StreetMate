@@ -65,11 +65,17 @@
 
         
         <!-- Listing Flexbox -->
-        
         <div class="container">
             <div class="listingBox">
                 <div class="list">
-                    <ul id="myarray"></ul> 
+                    <table id="parking-table">
+                        <tr></tr>
+                        <th>Preview</th>
+                        <th>Private/public</th>
+                        <th>Location</th>
+                        <th>price</th>
+                        <th>Contact</th>
+                    </table>
                 </div> 
             </div> 
         </div>
@@ -83,17 +89,22 @@
             <form id="dataForm">
                 <label for="price">Price:</label>
                 <input type="text" id="pricef" name="price" required>
-                
-                <label for="type">Type:</label>
-                <input type="text" id="type" name="type" required>
+        
+                <label for="type">type</label>
+                <select id="type" name="type">
+                <option value="Public">Public</option>
+                <option value="Private">Private</option>
+                </select>
+
                 
                 <label for="location">Location:</label>
                 <input type="text" id="locationf" name="location" required>
                 
                 <label for="image">Image URL:</label>
                 <input type="text" id="imagef" name="image" required>
-                
-                <button type="button" onclick="submitForm()">Submit</button>
+                <label for="email">email</label>
+                <input type="text" id="emailf" name="email" required>                
+                <button type="button" id="formsubmit">Submit</button>
             </form>
         </div>
     </div>

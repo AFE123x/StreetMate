@@ -134,13 +134,14 @@ table img {
   margin-right: 10px; /* Adjust the margin as needed */
 }
 
+    
 
 /* Style for the table and cells */
 .parking-table {
   width: 100%;
   margin-left: 15px;
   background-color: #2f2f2f;
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+  
 
 }
 
@@ -148,6 +149,7 @@ table img {
   padding: 20px 50px 20px 0px;
   text-align: left;
   border-top: 1px solid #7e6969;
+  
 }
 
 
@@ -172,6 +174,7 @@ table img {
 
 #dataContainer {
   display: flex;
+  
 }
 
 #toggleFormBtn{
