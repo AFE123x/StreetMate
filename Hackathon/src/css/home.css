@@ -2,7 +2,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@100&family=Montserrat:ital,wght@0,300;1,500&display=swap'); 
 
 
-
 /* Information Styles */
 .information {
     display: flex;
@@ -10,7 +9,9 @@
     align-items: center;
     padding: 10px;
     background-color: #212121;
-    padding-bottom: 100%;
+    padding-bottom: 30px;
+    padding-left: 10%;
+    padding-right: 10%;
 }
 
   .info-text-content {
@@ -32,12 +33,13 @@
     margin-top: 40px;
     font-size: 30px;
   }
-  
+
   .information img {
     border-radius: 4%;
     border: 6px solid;
     border-color: #ecf0f1;
     width: 50%; 
     height: auto; 
+    margin-top: 75px;
   }
   

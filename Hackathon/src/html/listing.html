@@ -1,6 +1,4 @@
-
 <!DOCTYPE html>
-
 <html>
     <head>
         <meta charset="UTF-8">
@@ -16,14 +14,14 @@
         <!-- Top Container + Nav Bar -->
         <div class="topContainer">
             <div class="logo" id="logo">
-                <img src="../resources/20210908_162908.jpg">
+                <img src="../resources/logo.png">
                 <h1>StreetMate™</h1>
             </div>
             <nav>
                 <ul class="nav__links">
-                    <li> <a href="home">Home</a></li>
+                    <li> <a href="../html/index.html">Home</a></li>
                     <li> <a href="../html/listing.html">Listings</a></li>
-                    <li><a href="contact">Contact</a></li>
+                    <li><a href="../html/contact.html">Contact</a></li>
                 </ul>
             </nav>
         </div>
@@ -52,12 +50,13 @@
 
                     </div>
                     <div id="location">
-                        <h1>Location</h1>
-                        <h4>within</h4>
+                        <h1>Location&nbsp;</h1>
+                        <h2>within&nbsp;</h2>
                         <input type="text" name="Radius" placeholder="distance" >
-                        <h4>of</h4>
+                        <h2>&nbsp;of&nbsp;</h2>
                         <input type="text" name="ZIP" placeholder="Zip Code" >
                     </div>
+                    <h2 id="update">Update</h2>
                 </div>
                 
             </div>  
@@ -66,15 +65,39 @@
 
         
         <!-- Listing Flexbox -->
-        <br><br><br><br>
+        
         <div class="container">
-        <div class="listingBox">
-            <div class="list">
-               <ul id="myarray"></ul> 
+            <div class="listingBox">
+                <div class="list">
+                    <ul id="myarray"></ul> 
+                </div> 
             </div> 
-        </div> 
+        </div>
+
+        
+        <button id="toggleFormBtn">
+            +
+        </button>
+        
+        <div id="formContainer">
+            <form id="dataForm">
+                <label for="price">Price:</label>
+                <input type="text" id="pricef" name="price" required>
+                
+                <label for="type">Type:</label>
+                <input type="text" id="type" name="type" required>
+                
+                <label for="location">Location:</label>
+                <input type="text" id="locationf" name="location" required>
+                
+                <label for="image">Image URL:</label>
+                <input type="text" id="imagef" name="image" required>
+                
+                <button type="button" onclick="submitForm()">Submit</button>
+            </form>
+        </div>
     </div>
-    </div>
+        <script src="../js/buttontoggle.js"></script>
         <script src="../js/scripts.js"></script>
         <script src="../js/listing.js"></script>
     </body>

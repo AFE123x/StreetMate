@@ -13,7 +13,6 @@
 .listingContainer{
   display:flex;
 
-
 }
 
 .filterArea {
@@ -22,7 +21,10 @@
   /* justify-content: center; */
   align-items: center;
   padding-right: none;
-
+  margin-bottom: 35px;
+  margin-left: 50px;
+  margin-right: 50px;
+  
   
 }
 
@@ -46,7 +48,7 @@
 }
 
 #Publicprivateoption {
-  background-color: #999999;
+  background-color: #595959;
   padding: 20px; 
   border-radius: 2em;
   display: flex;
@@ -60,13 +62,13 @@
   display: flex; 
   flex-direction: row;
   align-items: center;
-  font-size: 18px;
+  font-size: 25px;
   padding: 5px;  
   justify-content: space-between;
 }
 
 #price {
-  background-color: #999999;
+  background-color: #595959;
   padding: 20px; 
   border-radius: 2em;
   display: flex; 
@@ -81,25 +83,50 @@
 }
 
 #location {
-  background-color: #999999;
+  background-color: #595959;
   padding: 20px; 
   border-radius: 2em;
   display: flex;
+  align-items: center;
   flex-direction: ro;
 }
 
-#location h1 h4 {
+#location h1 h2 {
   margin-right: 10px;
 }
 
-.container {
-  margin-left: 100px;
+
+.list {
+  font-size: 30px;
+  border-radius: 0.6rem;
+  overflow: hidden; 
 }
 
+.list img {
+  padding: 10px 50px 10px 0px;
+}
+
+table, th, td  {
+  padding: 1rem; 
+
+}
+
+table img {
+  vertical-align: middle;
+}
+
+ .container {
+  margin-left: 25px;
+  margin-right: 25px;
+} 
+
 .listingBox {
-  background-color: green;
+  /* background-color: rgb(49, 57, 49); */
   padding-left: 60px
   margin-left 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Optional: Add styling for individual filter divs */
@@ -107,23 +134,53 @@
   margin-right: 10px; /* Adjust the margin as needed */
 }
 
+
 /* Style for the table and cells */
 .parking-table {
   width: 100%;
-  /* border: 1px solid #7e6969; Add border to the table */
   margin-left: 15px;
-  
+  background-color: #2f2f2f;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+
 }
 
-.parking-table th, .parking-table td {
-  padding: 8px;
+.parking-table th, td {
+  padding: 20px 50px 20px 0px;
   text-align: left;
   border-top: 1px solid #7e6969;
-  
 }
+
 
 /* Style for the images */
 .parking-table img {
   display: block;
   margin: 0 auto; /* Center the image in its cell */
+  margin-right: 5rem; 
+  vertical-align: middle;
+  
+}
+
+#update {
+  background-color: rgb(36, 76, 50);
+  border-radius: 4px;
+  padding: 7px;
+}
+#update:hover{
+  background-color: rgb(25, 51, 34);
+
+}
+
+#dataContainer {
+  display: flex;
+}
+
+#toggleFormBtn{
+  width: 50px;
+  height: 50px;
+  font-size: 40px;
+  background-color: green;
+  border-radius: 10px;
+}
+#toggleFormBtn:hover{
+  background-color: greenyellow;
 }
