@@ -1,12 +1,46 @@
+/* Font */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100&family=Montserrat:ital,wght@0,300;1,500&display=swap');
 
+
+/* Listing Containers  */
 .listingContainer{
     display: flex; 
     justify-content: center;
     background-color: #ecf0f1; 
 }
 
+/* Filter Buttons */
 .filterBox {
-    background-color: #ecf0f1;
+    background-color: darkgrey;
+    font-size: 12px; 
+    font-family: "Montserrat", sans-serif;
+    padding: 0.5em 1em;
+    margin: 0.25em;
+    border-radius: 1em;
+}
+
+.button {
+    font-size: 12px; 
+    font-family: "Montserrat", sans-serif;
+    padding: 0.5em 1em;
+    margin: 0.25em;
+    border-radius: 1em;
+    border: none; 
+    outline: none;
+    background: #dddddd; 
+    cursor: pointer;
+}
+
+.button:not(.button--selected):hover {
+    background-color: #cccccc;
 
 }
+
+.button--selected {
+    background-color: #009578; 
+    text-decoration-color: white;
+}
+
+
+
 
