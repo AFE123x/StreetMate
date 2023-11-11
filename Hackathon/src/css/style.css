@@ -1,9 +1,93 @@
-body {
-    margin: 0; 
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100&family=Montserrat:ital,wght@0,300;1,500&display=swap');
+
+/* Reset and Global Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
     padding: 0;
+    background-color: #24252A;
 }
 
-.navbar {
-    background-color: white; 
-    
+/* Header Styles */
+.topContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.logo img {
+    width: 100px;
+    height: auto;
+    margin-right: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    cursor: pointer;
+    color: #ecf0f1;
+    align-items: center;
+    display: flex;
+    justify-content: flex-start;
+}
+
+/* Navigation Styles */
+.topContainer nav {
+    display: flex;
+    align-items: center;
+}
+
+.nav__links {
+    list-style: none;
+    margin-left: 20px; /* Adjust the left margin as needed */
+}
+
+.nav__links li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+li, a {
+    text-decoration: none; /* Remove underline from links */
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 40px;
+    color: #ecf0f1;
+}
+
+li:hover {
+    background-color: bisque;
+}
+
+.nav__links li a {
+    transition: all 0.3s ease 0s;
+}
+
+.nav__links li a:hover {
+    background-color: #0088a9;
+}
+
+/* Title Styles */
+#title {
+    color: #ecf0f1;
+}
+
+/* Information Styles */
+.information {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.information p {
+    width: 50%;
+    margin-right: 20px;
+}
+
+.information img {
+    width: 50%;
+    height: auto;
 }
