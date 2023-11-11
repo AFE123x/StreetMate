@@ -74,7 +74,9 @@ function submitForm() {
         var type = document.getElementById("type").value;
         var location = document.getElementById("locationf").value;
         var image = document.getElementById("imagef").value;
-        
+        var email = document.getElementById("emailf").value;
+        addrow(price,type,location,image,email);
+
 
         // Rest of your code goes here...
 
