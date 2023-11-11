@@ -31,6 +31,7 @@
     align-items: center;
     display: flex;
     justify-content: flex-start;
+    font-size: 20px;
 }
 
 /* Navigation Styles */
@@ -74,20 +75,20 @@ li:hover {
     color: #ecf0f1;
 }
 
-/* Information Styles */
-.information {
+.authors {
+    margin-top: 75px;
+    margin-left: 15px;
+}
+
+.label {
+    color: #ecf0f1;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
+    border-bottom: solid;
+    width: 25%;
 }
 
-.information p {
-    width: 50%;
-    margin-right: 20px;
-}
-
-.information img {
-    width: 50%;
+#Githublogo{
+    width: 40px;
     height: auto;
-}
+    margin-top: 8px;
+  }

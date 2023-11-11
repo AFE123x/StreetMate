@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 
 <html>
@@ -6,10 +7,43 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Street Mate Project</title>
         <link rel="javascript" href="../js/scripts.js">
+        <link rel="stylesheet" href="../css/style.css">
         <link rel="stylesheet" href="../css/listing.css">
     </head>
     <body>
-        <h1> Listing </h1> 
-        <script src="script.js"></script>
+        
+        <!-- Top Container + Nav Bar -->
+        <div class="topContainer">
+            <div class="logo" id="logo">
+                <img src="../resources/20210908_162908.jpg">
+                <h1>StreetMate™</h1>
+            </div>
+            <nav>
+                <ul class="nav__links">
+                    <li> <a href="home">Home</a></li>
+                    <li> <a href="../html/listing.html">Listings</a></li>
+                    <li><a href="contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <!-- Container for Filter and Listing -->
+        <main class="listingContainer">
+            <!-- Filter Flexbox -->
+            <div class="filterBox">
+                <form id="filterForm">
+                    <label for="categoryFilter">Category: </label>
+                    <select id="categoryFilter" name="catagoryFilter"> 
+                </form> 
+            
+            </div>
+            
+            <!-- Listing Flexbox -->
+            <div class="listingBox">
+
+
+            </div> 
+        
+        </main>
     </body>
 </html>

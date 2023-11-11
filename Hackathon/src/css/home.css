@@ -1,0 +1,49 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100&family=Montserrat:ital,wght@0,300;1,500&display=swap');
+@import 
+
+
+
+/* Information Styles */
+.information {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+
+.information {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: flex-start; 
+  }
+
+  .info-text-content {
+    margin-right: 25px;
+    margin-left: 10px;
+    margin-top: 5px;
+    width: 50%;
+  }
+  .info-text-content h1 {
+    color: #797a7a;
+    margin-top: 27.5px;
+    font-size: 55px; 
+  }
+  
+  
+  .info-text-content p {
+    font-size: 18px;
+    color: #797a7a;
+    margin-top: 40px;
+    font-size: 30px;
+  }
+  
+  .information img {
+    border-radius: 4%;
+    border: 6px solid;
+    border-color: #ecf0f1;
+    width: 50%; 
+    height: auto; 
+  }
+  

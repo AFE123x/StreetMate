@@ -1,0 +1,12 @@
+
+.listingContainer{
+    display: flex; 
+    justify-content: center;
+    background-color: #ecf0f1; 
+}
+
+.filterBox {
+    background-color: #ecf0f1;
+
+}
+
