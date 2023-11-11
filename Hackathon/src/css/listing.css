@@ -44,3 +44,57 @@
 
 
 
+
+//flex boxes
+
+
+
+
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Street Mate Project</title>
+  <link rel="stylesheet" href="../css/listing.css">
+</head>
+<body>
+
+<!-- Top Container + Nav Bar -->
+<div class="topContainer">
+  <div class="logo" id="logo">
+    < img src="../resources/20210908_162908.jpg" alt="StreetMate Logo">
+    <h1>StreetMate</h1>
+  </div>
+  <nav>
+    <ul class="nav__links">
+      <li><a href=" ">Home</a ></li>
+      <li><a href="../html/listing.html">Listings</a ></li>
+      <li><a href="contact">Contact</a ></li>
+    </ul>
+  </nav>
+</div>
+
+<!-- Container for Filter and Listing -->
+<main class="listingContainer">
+  <!-- Filter Flexbox -->
+  <div class="filterBox">
+    <h1>Filter</h1>
+    <button class="button button--selected" type="button">All</button>
+    <button class="button" type="button">Option1</button>
+    <button class="button" type="button">Option2</button>
+    <button class="button" type="button">Option3</button>
+  </div>
+
+  <!-- Listing Flexbox -->
+  <div class="listingBox" id="listingContainer">
+
+  </div>
+</main>
+
+<script src="../js/script.js"></script>
+
+</body>
+</html>
