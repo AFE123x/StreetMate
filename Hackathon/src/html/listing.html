@@ -9,6 +9,7 @@
         <link rel="javascript" href="../js/scripts.js">
         <!-- <link rel="stylesheet" href="../css/style.css"> -->
         <link rel="stylesheet" href="../css/listing.css">
+        <link rel="stylesheet" href="../css/style.css">
     </head>
     <body>
         
@@ -30,12 +31,27 @@
         <!-- Container for Filter and Listing -->
         <div class="listingContainer">
             <!-- Filter Flexbox -->
-            <div id="filterBox">
-                <h1>Filter</h1>
-                <button class="button" type="button" onclick="activeFilter()">All</button>
-                <button class="button" type="button" onclick="activeFilter()">Option1</button>
-                <button class="button" type="button" onclick="activeFilter()">Option2</button>
-                <button class="button" type="button" onclick="activeFilter()">Option3</button>
+            <div class="filterArea">
+                <h3>Filter</h3>
+                <div id="filters">
+                    <div id="Publicprivateoption">
+                        <h1>aoeu</h1>
+                        <label>
+                            <input type="checkbox" name="option1" id="PublicParking"> Public
+                        </label>
+                        <br>
+                        <label>
+                            <input type="checkbox" name="option2" id="PrivateParking"> Private
+                        </label>
+                    </div>
+                    <div id="price">
+                        <h1>aoeu</h1>
+                    </div>
+                    <div id="location">
+                        <h1>aoeu</h1>
+                    </div>
+                </div>
+                
             </div>
             
             <!-- Listing Flexbox -->

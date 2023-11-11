@@ -1,48 +1,30 @@
 /* Font */
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@100&family=Montserrat:ital,wght@0,300;1,500&display=swap');
 
-
 /* Listing Containers  */
 .listingContainer{
     display: flex; 
     justify-content: center;
+    
 }
 
-/* Filter Buttons */
-.filterBox {
-    background-color: darkgrey;
-    font-size: 12px; 
-    font-family: "Montserrat", sans-serif;
-    padding: 0.5em 1em;
-    margin: 0.25em;
-    border-radius: 1em;
+.filterArea {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background-color: #212121;
+  padding: 100%;
 }
 
-.button {
-    font-size: 12px; 
-    font-family: "Montserrat", sans-serif;
-    padding: 0.5em 1em;
-    margin: 0.25em;
-    border-radius: 1em;
-    border: none; 
-    outline: none;
-    background: #dddddd; 
-    cursor: pointer;
+#filters {
+  display: flex;
+  flex-direction: row;
 }
 
-.button:hover {
-    background-color: #cccccc;
-    font-size: 13px; 
-
+/* Optional: Add styling for individual filter divs */
+#Publicprivateoption, #price, #location {
+  margin-right: 10px; /* Adjust the margin as needed */
 }
-
-.active--button {
-  background-color: green;
-  font-size: 13px; 
-}
-
-
-
 
 
 

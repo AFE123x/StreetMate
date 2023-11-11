@@ -1,6 +1,5 @@
 /* Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100&family=Montserrat:ital,wght@0,300;1,500&display=swap');
-@import 
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100&family=Montserrat:ital,wght@0,300;1,500&display=swap'); 
 
 
 
@@ -10,14 +9,8 @@
     justify-content: space-between;
     align-items: center;
     padding: 10px;
+    background-color: #212121;
 }
-
-
-.information {
-    display: flex; 
-    justify-content: space-between; 
-    align-items: flex-start; 
-  }
 
   .info-text-content {
     margin-right: 25px;
