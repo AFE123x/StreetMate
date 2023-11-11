@@ -32,26 +32,27 @@
 
 .button:hover {
     background-color: #cccccc;
+    font-size: 13px; 
 
 }
 
-.active, .button:hover {
-    background-color: green;
-    color: white;
-    border: 1px solid green; 
+.active--button {
+  background-color: green;
+  font-size: 13px; 
 }
 
 
 
 
 
-//flex boxes
+
+/* //flex boxes */
 
 
 
 
 
-<!DOCTYPE html>
+/* <!DOCTYPE html>
 
 <html lang="en">
 <head>
@@ -97,4 +98,4 @@
 <script src="../js/script.js"></script>
 
 </body>
-</html>
+</html> */

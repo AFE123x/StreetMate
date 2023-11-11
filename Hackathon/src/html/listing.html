@@ -28,21 +28,21 @@
         </div>
 
         <!-- Container for Filter and Listing -->
-        <main class="listingContainer">
+        <div class="listingContainer">
             <!-- Filter Flexbox -->
-            <div class="filterBox">
+            <div id="filterBox">
                 <h1>Filter</h1>
-                <button class="button active" type="button">All</button>
-                <button class="button" type="button">Option1</button>
-                <button class="button" type="button">Option2</button>
-                <button class="button" type="button">Option3</button>
+                <button class="button" type="button" onclick="activeFilter()">All</button>
+                <button class="button" type="button" onclick="activeFilter()">Option1</button>
+                <button class="button" type="button" onclick="activeFilter()">Option2</button>
+                <button class="button" type="button" onclick="activeFilter()">Option3</button>
             </div>
             
             <!-- Listing Flexbox -->
             <div class="listingBox">
+
             </div> 
-        
-        </main>
+        </div>
         <script src="../js/scripts.js"></script>
     </body>
 </html>

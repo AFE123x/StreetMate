@@ -1,25 +1,31 @@
 
+var filterButtons = document.querySelectorAll('.button');
 
-var listingContainer = document.querySelector(".listingContainer");
-var filterButtons = listingContainer.querySelectorAll(".button");
-
-for (var i = 0; i < filterButtons.length; i++) {
-  filterButtons[i].addEventListener("click", function () {
-    var current = listingContainer.querySelector(".button--selected");
-    current.classList.remove("button--selected");
-    this.classList.add("button--selected");
-    updateListing(this.innerText); 
-  });
-}
-
-function updateListing(filter) {
-  var listings = document.querySelectorAll('.listing');
-
-  listings.forEach(function(listing) {
-    if (filter === 'All' || listing.dataset.filter === filter) {
-      listing.style.display = 'block';
-    } else {
-      listing.style.display = 'none';
+filterButtons.forEach(function(button) {
+  button.addEventListener('click', function() {
+    if(button.classList == "button") {
+      button.classList.add("active--button");
+    }
+    else {
+      filterButtons.classList.remove("active--button");
+      filterButtons.classList.add("button");
     }
   });
-}
+});
+
+function addFilter () {
+  
+}; 
+
+
+// function updateListing(filter) {
+//   var listings = document.querySelectorAll('.listing');
+
+//   listings.forEach(function(listing) {
+//     if (filter === 'All' || listing.dataset.filter === filter) {
+//       listing.style.display = 'block';
+//     } else {
+//       listing.style.display = 'none';
+//     }
+//   });
+// }
