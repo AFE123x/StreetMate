@@ -116,17 +116,19 @@ table img {
 }
 
  .container {
-  margin-left: 25px;
-  margin-right: 25px;
+  margin-left: 75px;
+  margin-right: 75px;
 } 
 
 .listingBox {
   /* background-color: rgb(49, 57, 49); */
   padding-left: 60px
-  margin-left 10px;
+  margin-left 30px;
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: #2f2f2f;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
 }
 
 /* Optional: Add styling for individual filter divs */
@@ -136,14 +138,6 @@ table img {
 
     
 
-/* Style for the table and cells */
-.parking-table {
-  width: 100%;
-  margin-left: 15px;
-  background-color: #2f2f2f;
-  
-
-}
 
 .parking-table th, td {
   padding: 20px 50px 20px 0px;
@@ -169,7 +163,6 @@ table img {
 }
 #update:hover{
   background-color: rgb(25, 51, 34);
-
 }
 
 #dataContainer {
