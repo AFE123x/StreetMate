@@ -1,4 +1,12 @@
+/**
+ * The initial size of the parkingSpots array.
+ */
 let size = 3;
+
+/**
+ * An array containing details of parking spots, including price, type, location, etc.
+ * @type {Array<Object>}
+ */
 const parkingSpots = [
     {
         price: 10.00,
@@ -36,7 +44,14 @@ for (var i = 0; i < 3; i++) {
     var c = parkingSpots[i];
     addrow(c.price, c.type, c.location, c.image, c.email);
 }
-
+/**
+ * Adds a new row to the HTML table with parking spot details.
+ * @param {number} price - The price of the parking spot.
+ * @param {string} type - The type of the parking spot (Public or Private).
+ * @param {string} location - The location of the parking spot.
+ * @param {string} image - The URL of the image representing the parking spot.
+ * @param {string} email - The email of the parking spot owner.
+ */
 function addrow(price, type, location, image, email) {
     var table = document.getElementById("parking-table");
     var row = document.createElement("tr");
@@ -61,7 +76,7 @@ function addrow(price, type, location, image, email) {
 
     // Price
     var pricecell = document.createElement("td");
-    var pricetext = document.createTextNode(price);
+    var pricetext = document.createTextNode("$" + price);
     pricecell.appendChild(pricetext);
     row.appendChild(pricecell);
 
@@ -75,14 +90,20 @@ function addrow(price, type, location, image, email) {
 
     table.appendChild(row);
 }
-
+/**
+ * Resets the HTML table by removing all rows.
+ */
 function resetTable() {
     var table = document.getElementById("parking-table");
     while (table.rows.length > 0) {
         table.deleteRow(0);
     }
 }
-
+/**
+ * Handles the form submission and adds a new parking spot.
+ * Retrieves form input values and uses geocoding to get coordinates.
+ * @throws {Error} If an error occurs during form submission.
+ */
 async function submitForm() {
     try {
       const price = parseFloat(document.getElementById("pricef").value);
@@ -120,7 +141,11 @@ async function submitForm() {
   
   const Formsubmission = document.getElementById("formsubmit");
   Formsubmission.addEventListener("click", submitForm);
-  
+  /**
+ * Fetches coordinates using the OpenCageData API based on the provided zip code.
+ * @param {string} alt - The zip code to fetch coordinates for.
+ * @return {Promise<{lat: number, lng: number, county: string} | null>} Object with latitude, longitude, and county, or null if not found.
+ */
   async function getCoordinates(alt) {
     const zipCode = alt;
     const apiKey = '60e9698acc024b478f24d423e7c92ad4';
@@ -147,7 +172,10 @@ async function submitForm() {
       return null;
     }
   }
-
+  /**
+ * Filters parking spots based on user input (price range, location radius, type).
+ * @throws {Error} If an error occurs during the filtering process.
+ */
   async function filter() {
     resetTable();
   
@@ -186,7 +214,14 @@ async function submitForm() {
       // Handle the error, e.g., display an alert or log it to the console.
     }
   }
-  
+  /**
+ * Calculates the haversine distance between two sets of coordinates.
+ * @param {number} lat1 - Latitude of the first point.
+ * @param {number} lon1 - Longitude of the first point.
+ * @param {number} lat2 - Latitude of the second point.
+ * @param {number} lon2 - Longitude of the second point.
+ * @return {number} The haversine distance in kilometers.
+ */
   function haversineDistance(lat1, lon1, lat2, lon2) {
     const earthRadius = 6371; // Earth radius in kilometers
   
