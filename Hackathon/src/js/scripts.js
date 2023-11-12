@@ -13,10 +13,6 @@ filterButtons.forEach(function(button) {
   });
 });
 
-function addFilter () {
-  
-}; 
-
 
 
 

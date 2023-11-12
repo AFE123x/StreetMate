@@ -8,6 +8,7 @@
         <!-- <link rel="stylesheet" href="../css/style.css"> -->
         <link rel="stylesheet" href="../css/listing.css">
         <link rel="stylesheet" href="../css/style.css">
+        <link rel="icon" href="../resources/logo.png">
     </head>
     <body>
         
@@ -56,7 +57,7 @@
                         <h2>&nbsp;of&nbsp;</h2>
                         <input type="text" name="ZIP" placeholder="Zip Code" >
                     </div>
-                    <h2 id="update">Update</h2>
+                    <h2 id="update" onclick=filter()>Update</h2>
                 </div>
                 
             </div>  
@@ -97,7 +98,7 @@
                 </select>
 
                 
-                <label for="location">Location:</label>
+                <label for="location">ZIP code:</label>
                 <input type="text" id="locationf" name="location" required>
                 
                 <label for="image">Image URL:</label>
@@ -111,5 +112,6 @@
         <script src="../js/buttontoggle.js"></script>
         <script src="../js/scripts.js"></script>
         <script src="../js/listing.js"></script>
+        <script src="https://unpkg.com/opencage-api-client"></script>
     </body>
 </html>

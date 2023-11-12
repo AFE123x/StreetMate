@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zip Code to Coordinates</title>
+</head>
+<body>
+  <label for="zipCode">Enter US Zip Code:</label>
+  <input type="text" id="zipCode" />
+  <button onclick="getCoordinates()">Get Coordinates</button>
+
+  <div id="result"></div>
+
+  <script>
+    function getCoordinates() {
+      const zipCode = document.getElementById('zipCode').value;
+
+      if (zipCode.trim() === '') {
+        alert('Please enter a zip code.');
+        return;
+      }
+
+      const apiKey = '60e9698acc024b478f24d423e7c92ad4';
+      const apiUrl = `https://api.opencagedata.com/geocode/v1/json?q=${zipCode}&countrycode=US&key=${apiKey}&no_annotations=1`;
+
+      fetch(apiUrl)
+        .then(response => response.json())
+        .then(data => {
+          if (data.results && data.results.length > 0) {
+            const result = data.results[0];
+            const coordinates = result.geometry;
+            const county = result.components.county;
+
+            displayResult(coordinates.lat, coordinates.lng, county);
+          } else {
+            alert('Could not find information for the given zip code.');
+          }
+        })
+        .catch(error => {
+          console.error('Error:', error.message);
+        });
+    }
+
+    function displayResult(latitude, longitude, county) {
+      const resultDiv = document.getElementById('result');
+      resultDiv.innerHTML = `<p>Coordinates: ${latitude}, ${longitude}</p>`;
+      resultDiv.innerHTML += `<p>County: ${county}</p>`;
+    }
+  </script>
+</body>
+</html>
