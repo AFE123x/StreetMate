@@ -15,7 +15,7 @@ const parkingSpots = [
         Zip_Code: "08540",
         longitude: -74.6518 ,
         latitude: 40.3815,
-        image: "https://ipo.rutgers.edu/sites/default/files/2021-11/NR14SolarPanels0030.JPG",
+        image: "https://ssl.cdn-redfin.com/photo/125/mbphoto/991/genMid.230017991_2.jpg",
         email: "user@email.com"
     },
     {
@@ -25,7 +25,7 @@ const parkingSpots = [
         Zip_Code: "08901",
         longitude: -74.4519 ,
         latitude:  40.4862,
-        image: "https://ipo.rutgers.edu/sites/default/files/2021-11/3_4_4.jpg", 
+        image: "https://ssl.cdn-redfin.com/photo/125/mbphoto/991/genMid.230017991_2.jpg", 
         email: "user2@email.com"
     },
     {
