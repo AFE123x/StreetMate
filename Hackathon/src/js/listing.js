@@ -148,7 +148,7 @@ async function submitForm() {
  */
   async function getCoordinates(alt) {
     const zipCode = alt;
-    const apiKey = '60e9698acc024b478f24d423e7c92ad4';
+    const apiKey = 'redacted';
     const apiUrl = `https://api.opencagedata.com/geocode/v1/json?q=${zipCode}&countrycode=US&key=${apiKey}&no_annotations=1`;
   
     try {
